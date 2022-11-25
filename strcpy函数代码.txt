@@ -1,5 +1,29 @@
 /*/*/*/*/*/*
-strcpy函数代码
+
+int tmy_strcpy1(void)
+{
+	char src[] = "abcedfdgds";
+	char dst[100] = { 0 };
+	int i = 0;
+ 
+ 
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dst[i] = src[i];
+	}
+ 
+	dst[i] = 0;
+ 
+	printf("%s\n", dst);
+ 
+	printf("\n");
+	system("pause");
+	return 0;
+}
+
+
+
+
 /*/*/*/*/*/*
 /**
 
