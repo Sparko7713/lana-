@@ -1,0 +1,11 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <view class="welcome-section">
+    <image wx:if="{{userInfo.avatar}}" class="user-avatar" src="{{userInfo.avatar}}" mode="aspectFill"></image>
+    <text class="welcome-text">欢迎回来，{{userInfo.nickname || userInfo.username}}！</text>
+  </view>
+  
+  <view class="actions">
+    <button class="logout-button" bindtap="handleLogout">退出登录</button>
+  </view>
+</view>
